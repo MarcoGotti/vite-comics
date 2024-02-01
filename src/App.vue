@@ -1,10 +1,14 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppMainTop from "./components/AppMainTop.vue";
+import AppMainBottom from "./components/AppMainBottom.vue";
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    AppMainBottom,
+    AppMainTop,
   }
 }
 </script>
@@ -15,8 +19,8 @@ export default {
   
   <main>
 
-    <div id="main_top"></div>
-    <div id="main_bottom"></div>
+    <AppMainTop></AppMainTop>
+    <AppMainBottom></AppMainBottom>
 
   </main>
 

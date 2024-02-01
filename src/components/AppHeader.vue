@@ -49,7 +49,8 @@ header{
       display: flex;
       align-content: center;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 800;
+      font-size: 12px;
       height: 100%; /* perchè (?) altrimenti non raccoglie esattamente la stessa height del parent */
 
       & li.active{
