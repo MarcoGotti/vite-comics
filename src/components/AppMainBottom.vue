@@ -34,7 +34,7 @@ export default {
 <template>
 
     <div id="main_bottom">
-      <div class="container">
+      <div class="container pl_2">
         <div class="row">
           
           <div  v-for="icon in iconList" class="col grow_1">
@@ -44,37 +44,6 @@ export default {
             </div>           
           </div>
           
-          <!-- <div class="col grow_1">
-            <div class="card">
-              <img src="/img/buy-comics-digital-comics.png" alt="">
-              <h3>digital comics</h3>
-            </div>           
-          </div>
-          <div class="col grow_1">
-            <div class="card">
-              <img src="/img/buy-comics-merchandise.png" alt="">
-              <h3>dc merc
-                handise</h3>
-            </div>           
-          </div>
-          <div class="col grow_1">
-            <div class="card">
-              <img src="/img/buy-comics-subscriptions.png" alt="">
-              <h3>subscription</h3>
-            </div>           
-          </div>
-          <div class="col grow_1">
-            <div class="card">
-              <img src="/img/buy-comics-shop-locator.png" alt="">
-              <h3>comic shop locator</h3>
-            </div>           
-          </div>
-          <div class="col grow_1">
-            <div class="card">
-              <img src="/img/buy-dc-power-visa.svg" alt="">
-              <h3>dc power visa</h3>
-            </div>           
-          </div> -->
         </div>
       </div> 
     </div>
@@ -98,6 +67,10 @@ export default {
     & img{
       height: 60px;
     };
+
+    & img[src$="-visa.svg"]{
+      width: 60px;
+    }
 
     & h3{
       margin-left: 1rem;
