@@ -101,12 +101,8 @@ export default{
       <div class="container">
         <div class="row">
           
-
             <ComicCard :comic="comic"  v-for="comic in comics"></ComicCard>
-
-
-            
-          
+         
         </div>
       </div>
       
@@ -136,11 +132,12 @@ export default{
   & .label_content{
       position: absolute;
       top: -30px;
-      left: 240px;
+      left: 250px;
       background-color: var(--com-secondary);
-      padding: .75rem;
+      padding: .75rem 1.5rem;
       text-transform: uppercase;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 700;
     }
 
 

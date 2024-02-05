@@ -8,7 +8,9 @@
  
  <div id="footer_bottom">
       <div class="container d_flex justify_between">
-        <div class="action">sign-up now!</div>
+        <div class="action">
+          sign-up now!
+        </div>
         <div class="social d_flex">
           <h2 class="text">follow us</h2>
           <div class="icons">
@@ -43,9 +45,12 @@
   };
 
   & .social{
+    align-items: center;
+    
     & h2{
       color: var(--com-secondary);
       text-transform: uppercase;
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 600;
       font-size: 20px;
     };

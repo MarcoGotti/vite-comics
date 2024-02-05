@@ -64,6 +64,7 @@
 
 <style scoped>
 #footer_top{
+  
   height: 370px;
   background-image: url('/img/footer-bg.jpg');
   background-size: 100% auto;
@@ -71,8 +72,9 @@
   color: var(--com-white);
 
   & h3{
+    font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 600;
 
   }
 

@@ -22,8 +22,14 @@ export default {
 
 <style scoped>
 
-
     .card {
+        transition: all 2s;
+        
+
+      & :hover{
+            filter: drop-shadow(0 0 10px var(--com-secondary));
+            transform: scale(1.05);
+      }
       & .wrapper{
         height: 170px;
         overflow-y: hidden;
@@ -34,7 +40,9 @@ export default {
       }
 
       & h6{
+        margin-top: 1rem;
         text-transform: uppercase;
+        text-align: left;
       }
     }
    

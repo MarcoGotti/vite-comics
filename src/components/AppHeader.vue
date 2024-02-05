@@ -50,11 +50,11 @@ header{
     & .main_menu{
       list-style: none;
       display: flex;
-      align-content: center;
+      align-items: center;
       text-transform: uppercase;
-      font-weight: 800;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 600;
       font-size: 12px;
-      height: 100%; /* perchè (?) altrimenti non raccoglie esattamente la stessa height del parent */
 
       & li.active{
           border-bottom: 5px solid var(--com-secondary);
