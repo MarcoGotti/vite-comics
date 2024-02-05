@@ -63,7 +63,7 @@
 
 
 <style scoped>
-    #footer_top{
+#footer_top{
   height: 370px;
   background-image: url('/img/footer-bg.jpg');
   background-size: 100% auto;

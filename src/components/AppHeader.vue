@@ -10,7 +10,7 @@ export default {
     <div class="container">
       <div class="row justify_between">
         <div class="col">
-          <img src="/img/dc-logo.png" alt="">
+          <img class="logo" src="/img/dc-logo.png" alt="">
         </div>
         <nav class="col">
             <ul class="main_menu">
@@ -28,17 +28,20 @@ export default {
         </nav>
       </div>
     </div>
+    <div class="wrapper">
+        <img src="/img/jumbotron.jpg" alt="">
+    </div>
   </header>
 
 </template>
 
 
 
-<style>
+<style scoped>
 header{
   background-color: aliceblue;
 
-  & img{
+  & .logo{
     width: 80px;
     padding: 20px 0;
   }
@@ -70,6 +73,16 @@ header{
           color: var(--com-primary);       
         };
       }     
+    }
+  }
+
+  & .wrapper{
+    height: 230px;
+    overflow-y: hidden;
+
+    & img{
+      width: 100%;
+      display: block;
     }
   }
 }

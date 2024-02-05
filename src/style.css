@@ -24,11 +24,15 @@ body {
 
 .row {
   display: flex;
-  margin: 0 -1rem;
+  margin: 0 -0.6rem;
 }
 
-.col {
-  padding: 0 1rem;
+[class^="col-"] {
+  padding: 0 0.6rem;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2);
 }
 
 .d_flex {
