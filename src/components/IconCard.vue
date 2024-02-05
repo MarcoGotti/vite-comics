@@ -24,19 +24,19 @@
     display: flex;
     align-items: center;
     color: white;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     
     & img{
       height: 60px;
     };
 
     & img[src$="-visa.svg"]{
-      width: 60px;
+      width: 55px;
     }
 
     & h3{
       margin-left: 1rem;
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 </style>

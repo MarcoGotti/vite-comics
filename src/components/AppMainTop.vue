@@ -1,6 +1,13 @@
 <script>
+
+import ComicCard from "./ComicCard.vue";
+
 export default{
     name: 'AppMainTop',
+    components: {
+      ComicCard
+    },
+
     data(){
       return{
         comics:[
@@ -87,25 +94,25 @@ export default{
 
     <div id="main_top">
 
-      <div class="label">
+      <div class="label_content">
           current series
       </div>
       
       <div class="container">
         <div class="row">
-          <div class="col-2" v-for="comic in comics">
+          
 
-            <div class="card">
-              <div class="wrapper">
-                <img :src="comic.thumb" alt="">
-              </div>            
-              <h6>{{ comic.series }}</h6>
-            </div>
+            <ComicCard :comic="comic"  v-for="comic in comics"></ComicCard>
+
 
             
-          </div>
+          
         </div>
-      </div>      
+      </div>
+      
+      <div class="add_content">
+        <a href="#">load more</a>
+      </div>
     </div>
 
 </template>
@@ -117,38 +124,39 @@ export default{
 #main_top{
   color: var(--com-white);
   min-height: 150px;
-  padding: 2rem 0;
+  padding: 2rem 0  1rem 0;
   position: relative;
+  text-align: center;
 
-  & .label{
+  & .row{
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+
+  & .label_content{
       position: absolute;
       top: -30px;
-      left: 180px;
+      left: 240px;
       background-color: var(--com-secondary);
       padding: .75rem;
       text-transform: uppercase;
       font-weight: 600;
     }
 
-  & .row{
-    flex-wrap: wrap;
-    row-gap: 2rem;
 
-    & .card {
-      & .wrapper{
-        height: 170px;
-        overflow-y: hidden;
+  & .add_content{
+      display: inline-block;
+      background-color: var(--com-secondary);
+      padding: .5rem 1.5rem;
+      text-transform: uppercase;
+      font-size: 10px;
+      margin-top: 1.25rem;
 
-        & img {
-         width: 100%;  
-        };
+      & a{
+        text-decoration: none;
+        color: var(--com-white);
       }
-
-      & h6{
-        text-transform: uppercase;
-      }
-    }
-  } 
+  }
 }
 
 </style>

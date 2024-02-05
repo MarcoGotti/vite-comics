@@ -10,7 +10,7 @@
     <div id="footer_top">
       <div class="container py_2 position_rel">
         <div class="row">
-          <div class="col">
+          <div class="col-">
             <h3>dc comics</h3>
             <ul>
               <li><a href="#">Characters</a></li>
@@ -27,7 +27,7 @@
               <li><a href="#">Shop DC Collectibles</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-">
             <h3>dc</h3>
             <ul>
               <li><a href="#">Terms Of Use</a></li>
@@ -43,7 +43,7 @@
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-">
             <h3>sites</h3>
             <ul>
               <li><a href="#">DC</a></li>

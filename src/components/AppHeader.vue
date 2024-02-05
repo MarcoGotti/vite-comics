@@ -77,7 +77,7 @@ header{
   }
 
   & .wrapper{
-    height: 230px;
+    height: 300px;
     overflow-y: hidden;
 
     & img{
