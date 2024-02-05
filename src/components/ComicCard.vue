@@ -23,13 +23,13 @@ export default {
 <style scoped>
 
     .card {
-        transition: all 2s;
+        transition: transform .5s;
         
 
-      & :hover{
+/*       & :hover{
             filter: drop-shadow(0 0 10px var(--com-secondary));
             transform: scale(1.05);
-      }
+      } */
       & .wrapper{
         height: 170px;
         overflow-y: hidden;
@@ -44,6 +44,11 @@ export default {
         text-transform: uppercase;
         text-align: left;
       }
+    }
+
+    & .card:hover{
+            filter: drop-shadow(0 0 10px var(--com-secondary));
+            transform: scale(1.05);
     }
    
 

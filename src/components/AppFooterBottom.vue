@@ -14,9 +14,11 @@
         <div class="social d_flex">
           <h2 class="text">follow us</h2>
           <div class="icons">
-            <!-- caricamento non riuscito ... bloccato a causa del tipo MIME non consentito (“image/gif”)
+
+            <!-- "...caricamento non riuscito ... bloccato a causa del tipo MIME non consentito (“image/gif”)..."
             <img src="/img/footer-facebook.png" alt="">
             <img src="/img/footer-twitter.png" alt=""> -->
+            
             <img src="/img/footer-periscope.png" alt="">
             <img src="/img/footer-pinterest.png" alt="">
             <img src="/img/footer-youtube.png" alt="">
